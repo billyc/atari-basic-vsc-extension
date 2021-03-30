@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Atari Basic",
+	"name": "Atari FastBasic",
 	"patterns": [
 		{
 			"include": "#lineNumbers"
@@ -21,7 +21,15 @@
 				},
 				{
 					"name": "comment.line",
-					"match": "(REM.+)"
+					"match": "(\\..+)"
+				},
+				{
+					"name": "comment.line",
+					"match": "^('.*)"
+				},
+				{
+					"name": "comment",
+					"match": "('.+)$"
 				},
 				{
 					"name": "comment.line.number-sign",
@@ -33,15 +41,23 @@
 			"patterns": [
 				{
 					"name": "support.function",
-					"match": "\\b(ABS|ADR|ASC|ATN|CHR$|CLOAD|CLOG|CLOSE|CLR|COLOR|COM|CONT|COS|CSAVE|DATA|DEG|DOS|DRAWTO|ENTER|EXP|FRE|GET|GRAPHICS|INPUT|INT|LEN|LETLIST|LOAD|LOCATE|LOG|LPRINT|NOTE|OPEN|PADDLE|PEEK|PLOT|POINT|POKE|POP|POSITION|PRINT|PTRIG|PUT|RAD|READ|REM|RESTORE|RND|SAVE|SETCOLOR|SGN|SIN|SOUND|SQR|STATUS|STICK|STRIG|STR$|USR|VAL|XIO?)\\b"
+					"match": "\\b(?i)(ABS|ADR|ASC|ATN|CHR$|CLOAD|CLOG|CLOSE|CLR|COLOR|COM|CONT|COS|CSAVE|DATA|DEG|DOS|DRAWTO|ENTER|EXP|FRE|GET|GRAPHICS|INPUT|INT|LEN|LETLIST|LOAD|LOCATE|LOG|LPRINT|NOTE|OPEN|PADDLE|PEEK|PLOT|POINT|POKE|POP|POSITION|PRINT|PTRIG|PUT|RAD|READ|REM|RESTORE|RND|SAVE|SETCOLOR|SGN|SIN|SOUND|SQR|STATUS|STICK|STRIG|STR$|USR|VAL|XIO?)\\b"
+				}, 
+				{
+					"name": "support.function",
+					"match": "\\b(?i)(DPEEK|ERR|EXP10|KEY|LOG10|RAND|TIME|PMADR)\\b"
 				}, 
 				{
 					"name": "keyword.control",
-					"match": "\\b(AND|BYE|END|ELSE|FOR|GOSUB|GOTO|GO TO|IF|NEW|NEXT|NOT|ON|OR|RETURN|RUN|STEP|STOP|THEN|TO|TRAP)\\b"
+					"match": "\\b(?i)(AND|BYE|END|ELSE|EXEC|EXIT|FOR|GOSUB|GOTO|GO TO|IF|LOOP|NEW|NEXT|NOT|ON|OR|RETURN|RUN|STEP|STOP|THEN|TO|TRAP)\\b"
+				},
+				{
+					"name": "keyword.control",
+					"match": "\\b(?i)(BGET|BPUT|DEC|DLI|DO|DPOKE|ENDIF|ELIF|FCOLOR|FILLTO|INC|MOVE|MSET|PAUSE|PMGRAPHICS|PMHPOS|PROC|REPEAT|TIMER|UNTIL|WEND|WHILE)\\b"
 				},
 				{
 					"name": "storage.type",
-					"match": "\\b(DIM)\\b"
+					"match": "\\b(?i)(DIM|BYTE|WORD)\\b"
 				}
 			]
 		},
@@ -62,7 +78,7 @@
 				{
 					"patterns": [{
 						"name": "constant.numeric",
-						"match": "\\d+"
+						"match": "[+-]?([0-9]*[.])?[0-9]+"
 					}]
 				}
 			]

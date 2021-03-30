@@ -1,13 +1,13 @@
 {
-    "name": "atari-basic",
-    "displayName": "atari-basic",
-    "description": "Landuage supprot for Atari Basic",
-    "publisher": "MarcinJozwikowski",
+    "name": "atari-fastbasic",
+    "displayName": "Atari FastBasic",
+    "description": "Language support for Atari FastBasic",
+    "publisher": "BillyCharlton",
     "repository": {
-        "url": "https://github.com/marcin-jozwikowski/atari-basic-vsc-extension.git",
+        "url": "https://github.com/billyc/atari-basic-vsc-extension.git",
         "type": "git"
     },
-    "version": "0.1.1",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^1.51.0"
     },
@@ -19,11 +19,13 @@
             {
                 "id": "basic",
                 "aliases": [
-                    "Atari Basic",
+                    "Atari FastBasic",
+                    "FastBasic",
                     "basic"
                 ],
                 "extensions": [
-                    ".bas"
+                    ".bas",
+                    ".fb"
                 ],
                 "configuration": "./language-configuration.json"
             }
