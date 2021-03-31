@@ -2,9 +2,6 @@
 
 All notable changes will be documented in this file.
 
-**1.1.0** - Better handling of hex constants, floating point, variable names, and statements
-**1.0.1** - Add readme, changelog
-**1.0.0** - Initial release
-
-
+- **1.1.x** Better handling of hex constants, floating point, variable names, and statements
+- **1.0.x** Initial release
 
