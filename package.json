@@ -1,41 +1,46 @@
 {
-    "name": "atari-fastbasic",
-    "displayName": "Atari FastBasic",
-    "description": "Language support for Atari FastBasic",
-    "publisher": "BillyCharlton",
-    "repository": {
-        "url": "https://github.com/billyc/atari-basic-vsc-extension.git",
-        "type": "git"
-    },
-    "version": "1.0.1",
-    "engines": {
-        "vscode": "^1.51.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
-    "contributes": {
-        "languages": [
-            {
-                "id": "basic",
-                "aliases": [
-                    "Atari FastBasic",
-                    "FastBasic",
-                    "basic"
-                ],
-                "extensions": [
-                    ".bas",
-                    ".fb"
-                ],
-                "configuration": "./language-configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "basic",
-                "scopeName": "source.basic",
-                "path": "./syntaxes/basic.tmLanguage.json"
-            }
-        ]
-    }
+	"name": "atari-fastbasic",
+	"displayName": "Atari FastBasic",
+	"description": "Language support for Atari FastBasic",
+	"publisher": "BillyCharlton",
+	"repository": {
+		"url": "https://github.com/billyc/atari-basic-vsc-extension.git",
+		"type": "git"
+	},
+	"version": "1.0.1",
+	"engines": {
+		"vscode": "^1.51.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "basic",
+				"aliases": [
+					"Atari FastBasic",
+					"FastBasic",
+					"basic"
+				],
+				"extensions": [
+					".bas",
+					".fb"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "basic",
+				"scopeName": "source.basic",
+				"path": "./syntaxes/basic.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "c6c83d5c-24a0-404f-a77e-7a8742dfd784",
+		"publisherDisplayName": "Billy Charlton (Because LLC)",
+		"publisherId": "284f06c0-701c-4184-baed-97491786ff7d"
+	}
 }

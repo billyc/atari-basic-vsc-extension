@@ -16,12 +16,8 @@
 		"lineNumbers": {
 			"patterns": [
 				{
-					"name": "comment.line.number-sign",
-					"match": "^(\\d+)"
-				},
-				{
 					"name": "comment.line",
-					"match": "(\\..+)"
+					"match": "^(\\..+)"
 				},
 				{
 					"name": "comment.line",
@@ -30,10 +26,6 @@
 				{
 					"name": "comment",
 					"match": "('.+)$"
-				},
-				{
-					"name": "comment.line.number-sign",
-					"match": "\\b[GO TO|GOTO|GOSUB|THEN]\\w(\\d+)"
 				}
 			]
 		},
@@ -49,11 +41,15 @@
 				}, 
 				{
 					"name": "keyword.control",
-					"match": "\\b(?i)(AND|BYE|END|ELSE|EXEC|EXIT|FOR|GOSUB|GOTO|GO TO|IF|LOOP|NEW|NEXT|NOT|ON|OR|RETURN|RUN|STEP|STOP|THEN|TO|TRAP)\\b"
+					"match": "\\b(?i)(AND|BYE|END|ELSE|EXIT|FOR|GOSUB|GOTO|GO TO|IF|LOOP|NEW|NEXT|NOT|ON|OR|RETURN|RUN|STEP|STOP|THEN|TO|TRAP)\\b"
+				},
+				{
+					"name": "support.function",
+					"match": "\\b(?i)(BGET|BPUT|DEC|DLI|DPOKE|EXEC|FCOLOR|FILLTO|INC|MOVE|MSET|PAUSE|PMGRAPHICS|PMHPOS|TIMER)\\b"
 				},
 				{
 					"name": "keyword.control",
-					"match": "\\b(?i)(BGET|BPUT|DEC|DLI|DO|DPOKE|ENDIF|ELIF|FCOLOR|FILLTO|INC|MOVE|MSET|PAUSE|PMGRAPHICS|PMHPOS|PROC|REPEAT|TIMER|UNTIL|WEND|WHILE)\\b"
+					"match": "\\b(?i)(DO|ELIF|ENDIF|ENDPROC|PROC|REPEAT|UNTIL|WEND|WHILE)\\b"
 				},
 				{
 					"name": "storage.type",
@@ -71,15 +67,25 @@
 					"patterns": [
 						{
 							"name": "constant.character.escape.basic",
-							"match": "\\\\."
+							"match": "\\\\[0-9]*"
 						}
 					]
 				},
 				{
-					"patterns": [{
-						"name": "constant.numeric",
-						"match": "[+-]?([0-9]*[.])?[0-9]+"
-					}]
+					"name": "variable.language",
+					"match": "\\b[_A-Z][_A-Z0-9]*\\b"
+				},
+				{
+					"name": "variable.other",
+					"match": "(?i)[_A-Z][_A-Z0-9]*%?\\$?"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "[+-]?([0-9]*[.])?[0-9]+"
+				},
+				{
+					"name": "constant.other",
+					"match": "\\$[A-F0-9]*"
 				}
 			]
 		}
