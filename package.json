@@ -41,5 +41,10 @@
 				"path": "./syntaxes/basic.tmLanguage.json"
 			}
 		]
+	},
+	"__metadata": {
+		"id": "c6c83d5c-24a0-404f-a77e-7a8742dfd784",
+		"publisherDisplayName": "Billy Charlton (Because LLC)",
+		"publisherId": "284f06c0-701c-4184-baed-97491786ff7d"
 	}
 }
