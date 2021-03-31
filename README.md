@@ -13,6 +13,6 @@ A very simple extension which enables syntax highlighting for FastBasic files.
 That's about it! Have fun :-)
 
 **Sample Code**
-![Sample Code](screenshot.png)
+![Sample Code](https://github.com/billyc/atari-basic-vsc-extension/raw/main/screenshot.png)
 
 
