@@ -3,7 +3,7 @@
 	"displayName": "Atari FastBasic",
 	"description": "Language support for Atari FastBasic",
 	"galleryBanner": {
-		"color": "#04F9AE"
+		"color": "#4F9AE2"
 	},
 	"icon": "icon.png",
 	"publisher": "BillyCharlton",
