@@ -11,7 +11,7 @@
 		"url": "https://github.com/billyc/atari-basic-vsc-extension.git",
 		"type": "git"
 	},
-	"version": "1.1.4",
+	"version": "1.1.5",
 	"engines": {
 		"vscode": "^1.51.0"
 	},
@@ -41,10 +41,5 @@
 				"path": "./syntaxes/basic.tmLanguage.json"
 			}
 		]
-	},
-	"__metadata": {
-		"id": "c6c83d5c-24a0-404f-a77e-7a8742dfd784",
-		"publisherDisplayName": "Billy Charlton (Because LLC)",
-		"publisherId": "284f06c0-701c-4184-baed-97491786ff7d"
 	}
 }
